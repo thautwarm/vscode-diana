@@ -15,7 +15,7 @@ You can add a `sigs.diana.json` to define auto-completion for your own modules:
         "doc": "...",
         "methods": [
             {
-                "name": "my_method",
+				"name": "my_method",
 				"type": "my_method : (Int) -> Int", // optional
 				"doc" : "an int-to-int function" // optional
             },
