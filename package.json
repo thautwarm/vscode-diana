@@ -1,0 +1,52 @@
+{
+	"name": "vscode-diana",
+	"displayName": "vscode-diana",
+	"description": "Basic language support for DianaScript",
+	"version": "0.0.1",
+	"publisher": "thautwarm",
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thautwarm/vscode-diana"
+	},
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:diana"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "diana",
+				"extensions": [
+					".diana"
+				]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"antlr4ts": "antlr4ts -visitor src/DianaScript.g4",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.0",
+		"@types/vscode": "^1.42.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"antlr4ts-cli": "^0.5.0-alpha.4",
+		"eslint": "^7.21.0",
+		"typescript": "^4.4.3"
+	},
+	"dependencies": {
+		"antlr4ts": "^0.5.0-alpha.4"
+	}
+}

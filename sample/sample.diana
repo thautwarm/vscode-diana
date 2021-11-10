@@ -1,0 +1,23 @@
+variable = fun ()
+    var x = 1
+    x + 1
+    str = "关注嘉然，顿顿解馋😅"
+    0x123
+    a + b
+    a + b > c and break
+    for i in Enum.range(Int.of("10"), 20) do
+        log(i)
+    end
+end
+
+workflow {
+   xpos 0b123 
+   ypos 123
+   on_click fun (self, pos)
+        (x, y) = pos
+        self.xpos = x
+        self.ypos = x
+   end
+}
+
+

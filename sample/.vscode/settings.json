@@ -1,0 +1,5 @@
+{
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true, // enable for all themes
+    }
+}
