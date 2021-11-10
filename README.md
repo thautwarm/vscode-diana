@@ -1,5 +1,5 @@
 <p align="center">
-<img width="250px" src="https://raw.githubusercontent.com/thautwarm/vscode-diana/master/static/static.png"/>
+<img width="550px" src="https://raw.githubusercontent.com/thautwarm/vscode-diana/master/static/static.png"/>
 </p>
 
 # VSCode-Diana
