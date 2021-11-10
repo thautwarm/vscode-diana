@@ -15,13 +15,13 @@ You can create a [`sigs.diana.json`](https://raw.githubusercontent.com/thautwarm
         "doc": "...",
         "methods": [
             {
-				"name": "my_method",
-				"type": "my_method : (Int) -> Int", // optional
-				"doc" : "an int-to-int function" // optional
+		"name": "my_method",
+		"type": "my_method : (Int) -> Int", // optional
+		"doc" : "an int-to-int function" // optional
             },
-			// ...
+	    // ...
         ]
     },
-	// ...
+    // ...
 ]
 ```
