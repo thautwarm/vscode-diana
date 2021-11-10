@@ -8,7 +8,7 @@ VSCode extension for [DianaScript](https://github.com/thautwarm/DianaScript-JIT)
 
 You can add a `sigs.diana.json` to define auto-completion for your own modules:
 
-```json
+```json5
 [ // ...
 	{
         "module": "MyModule",
