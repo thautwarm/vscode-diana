@@ -27,7 +27,8 @@
 				"id": "diana",
 				"extensions": [
 					".diana"
-				]
+				],
+				"configuration": "./language-configuration.json"
 			}
 		]
 	},
