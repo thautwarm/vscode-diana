@@ -19,5 +19,3 @@ workflow {
         self.ypos = x
    end
 }
-
-

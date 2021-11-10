@@ -3,9 +3,10 @@
 	"displayName": "vscode-diana",
 	"description": "Basic language support for DianaScript",
 	"version": "0.0.1",
-	"publisher": "thautwarm",
+	"publisher": "GReSummer",
 	"private": true,
 	"license": "MIT",
+	"icon": "static/icon.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/thautwarm/vscode-diana"
