@@ -54,25 +54,6 @@ const tokenTypes = new Map<number, number>([
 	[DianaScriptLexer.SINGLE_BINOP_2, getNativeTokenId("operator")],
 ]);
 
-const keywords = new Set<string>([
-	"fun",
-	"for",
-	"end",
-	"if",
-	"elif",
-	"do",
-	"while",
-	"loop",
-	"and",
-	"or",
-	"not",
-	"in",
-	"break",
-	"continue",
-	"return",
-	"var"
-]);
-
 const __KEYWORD = getNativeTokenId("keyword");
 for (const ruleName of DianaScriptLexer.ruleNames) {
 	if (ruleName.startsWith("T")) {
@@ -82,7 +63,7 @@ for (const ruleName of DianaScriptLexer.ruleNames) {
 			continue;
 		if (!(litName.startsWith("'") && litName.endsWith("'")))
 			continue;
-		if (keywords.has(litName.substr(1, litName.length - 2))) {
+		if (litName.substr(1, litName.length - 2).match(/[a-zA-Z_][a-zA-Z_0-9]*/)) {
 			tokenTypes.set(tokenType, __KEYWORD);
 		}
 	}
